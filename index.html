@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Team Celebration Lunch Options</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar" aria-label="Page sections">
+        <a href="#compare">Compare</a>
+        <a href="#map">Distance</a>
+        <a href="#details">Details</a>
+        <a href="#sources">Sources</a>
+      </nav>
+      <div class="hero-grid">
+        <section class="hero-copy" aria-labelledby="page-title">
+          <p class="eyebrow">Wednesday, May 6, 2026 · noon-ish · 8-10 people</p>
+          <h1 id="page-title">Celebration Lunch Options Near Santa Clara</h1>
+          <p class="lede">A neutral, scan-friendly comparison of food quality, atmosphere, proximity, expected cost, ratings, and large-group reservation fit for the team lunch.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#compare">View Comparison</a>
+            <a class="button" href="#details">Browse Restaurants</a>
+          </div>
+        </section>
+        <aside class="decision-panel" aria-label="Quick planning notes">
+          <div>
+            <span class="label">Office</span>
+            <strong>3333 Scott Blvd, Santa Clara</strong>
+          </div>
+          <div>
+            <span class="label">Closest</span>
+            <strong>Birk's Restaurant</strong>
+          </div>
+          <div>
+            <span class="label">Most Group-Friendly Signals</span>
+            <strong>Birk's, Maggiano's, Alexander's</strong>
+          </div>
+          <div>
+            <span class="label">Needs Caution</span>
+            <strong>Luna is walk-in only; The Alameda table cap is 7</strong>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="section intro" aria-labelledby="planning-notes-title">
+        <div>
+          <p class="kicker">How to read this</p>
+          <h2 id="planning-notes-title">Built for a practical team decision</h2>
+        </div>
+        <p>Cost and drive time are estimates. Review data combines the most useful public ratings found for each restaurant, favoring verified reservation platforms and major review sites. Reservation fit is based on public booking signals and published group policies, not a live inventory check for May 6.</p>
+      </section>
+
+      <section class="section controls-section" aria-labelledby="controls-title">
+        <div class="section-heading">
+          <p class="kicker">Filters</p>
+          <h2 id="controls-title">Adjust the View</h2>
+        </div>
+        <div class="controls" role="group" aria-label="Restaurant filters and sorting">
+          <label>
+            Cuisine
+            <select id="cuisineFilter">
+              <option value="all">All cuisines</option>
+            </select>
+          </label>
+          <label>
+            Priority
+            <select id="sortSelect">
+              <option value="balanced">Balanced score</option>
+              <option value="distance">Closest first</option>
+              <option value="cost">Lowest cost first</option>
+              <option value="rating">Highest review signal</option>
+              <option value="group">Best group fit</option>
+            </select>
+          </label>
+          <label class="checkbox">
+            <input id="reservationOnly" type="checkbox">
+            <span>Show reservation-friendly only</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="section" id="compare" aria-labelledby="compare-title">
+        <div class="section-heading">
+          <p class="kicker">Comparison</p>
+          <h2 id="compare-title">At-a-Glance Matrix</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Restaurant</th>
+                <th>Cuisine</th>
+                <th>Distance</th>
+                <th>Cost</th>
+                <th>Ratings</th>
+                <th>Large Group Fit</th>
+                <th>Atmosphere</th>
+              </tr>
+            </thead>
+            <tbody id="comparisonBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="map" aria-labelledby="map-title">
+        <div class="section-heading">
+          <p class="kicker">Proximity</p>
+          <h2 id="map-title">Relative Distance From the Office</h2>
+        </div>
+        <div class="distance-board">
+          <div class="office-marker">
+            <span>Office</span>
+            <strong>3333 Scott Blvd</strong>
+          </div>
+          <div id="distanceList" class="distance-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="details" aria-labelledby="details-title">
+        <div class="section-heading">
+          <p class="kicker">Details</p>
+          <h2 id="details-title">Restaurant Notes</h2>
+        </div>
+        <div id="cards" class="cards"></div>
+      </section>
+
+      <section class="section sources" id="sources" aria-labelledby="sources-title">
+        <div class="section-heading">
+          <p class="kicker">Sources</p>
+          <h2 id="sources-title">Reference Links</h2>
+        </div>
+        <p>Ratings and policies can change. Before booking, confirm live availability directly with the restaurant or reservation platform for Wednesday, May 6 at noon.</p>
+        <ul id="sourceList"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Static lunch-planning page · prepared for internal team comparison</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
