@@ -161,7 +161,7 @@ const restaurants = [
     address: "19379 Stevens Creek Blvd, Cupertino",
     distance: 8.2,
     drive: "18-30 min",
-    cost: "$58+ lunch prix fixe; $50+ overall",
+    cost: "$78 lunch prix fixe; a la carte entrees often $30-90+",
     costScore: 4,
     ratingScore: 4.55,
     ratings: ["OpenTable 4.6 (3.3k+)", "Tripadvisor 4.3 (350+)"],
@@ -170,13 +170,14 @@ const restaurants = [
     atmosphere: "Upscale, polished, special-occasion steakhouse",
     vibeScore: 4.3,
     qualityScore: 4.7,
-    summary: "A premium special-occasion option with a Wednesday-Friday lunch service and a published weekday lunch prix fixe. It is excellent for celebration polish, but among the highest-cost options.",
+    summary: "A premium special-occasion option with Wednesday-Friday lunch service and a current lunch prix fixe listed at $78. It is excellent for celebration polish, but among the highest-cost options.",
     dishes: "Hamachi shots, petite filet mignon, 50/50 burger, Alaskan halibut, mushroom risotto, A5 wagyu taco, and mochi doughnuts.",
     notes: ["Lunch Wed-Fri noon-2pm", "OpenTable reservations", "Private dining request pathway"],
     links: [
       ["Official info", "https://alexanderssteakhouse.com/cupertino/info/"],
       ["OpenTable", "https://www.opentable.com/alexanders-steakhouse-cupertino"],
-      ["Lunch menu", "https://alexandershospitality.com/menus/cupertino/lunch-menu-weekdays/"]
+      ["Official menu handoff", "https://alexanderssteakhouse.com/cupertino/going-to-imenupro-menus/"],
+      ["Current lunch menu", "https://qr.imenupro.com/rvl-gh"]
     ],
     colors: ["#263943", "#bf6947"]
   },
